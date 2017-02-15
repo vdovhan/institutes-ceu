@@ -1,0 +1,322 @@
+/* Theme CSS
+-------------------------*/
+
+@font-face { /* where FontName and fontname represents the name of the font you want to add */
+     font-family: 'HelveticaNeue';
+     src: url([[font:theme|helveticaneue.eot]]);
+     src: url([[font:theme|helveticaneue.eot]]) format('embedded-opentype'),
+          url([[font:theme|helveticaneue.woff]]) format('woff'),
+          url([[font:theme|helveticaneue.ttf]]) format('truetype'),
+          url([[font:theme|helveticaneue.svg]]) format('svg');
+    }
+
+@font-face { /* where FontName and fontname represents the name of the font you want to add */
+     font-family: 'HelveticaNeueUltraLight';
+     src: url([[font:theme|helveticaneueultralight.eot]]);
+     src: url([[font:theme|helveticaneueultralight.eot]]) format('embedded-opentype'),
+          url([[font:theme|helveticaneueultralight.woff]]) format('woff'),
+          url([[font:theme|helveticaneueultralight.ttf]]) format('truetype'),
+          url([[font:theme|helveticaneueultralight.svg]]) format('svg');
+    }
+
+*, *:before, *:after {box-sizing: border-box;}
+html{height:100%;background-color:#FAFAFA;}
+body{position:relative; min-height:100%; color:#58595b;}
+body .jqstooltip{border:0;border-radius:2px;}
+body.printing{height:100%}
+a,img{border:0px;text-decoration:none;color:#0090d9;transition: color 0.2s linear 0s;}
+a:hover{color:#DE5643; text-decoration: none;}
+a:focus {border:0; outline: none; text-decoration: none;}
+img { max-width: 100%; height: auto;width: auto\9;}
+ul{padding:0;margin:0 0 0 20px;}
+ul li{padding:0;margin:0;line-height:20px;}
+h1{color: #003370;font: bold 32px/36px HelveticaNeueUltraLight,sans-serif;margin: 0 0 30px;}
+h2{color: #003370;font: bold 26px/28px HelveticaNeueUltraLight,sans-serif;margin: 0 0 30px;}
+h3{color: #003370;font: bold 22px/26px HelveticaNeueUltraLight,sans-serif;margin: 0 0 20px;}
+hr {margin-bottom: 20px;}
+button{padding:6px 12px;}
+label {font: 14px Helvetica;}
+body .container-fluid {max-width: 100%;}
+body .with-sidepost #region-main-box.span12 {width: 98%;}
+body .container-fluid.with-sidepost {margin-left: 300px;}
+
+body {padding-top: 0 !important;}
+body img.iconsmall {padding: 0;}
+body img.icon {padding: 0; margin-right: 6px;}
+.moodle-actionmenu.show[data-enhanced] .menu .iconsmall, .moodle-actionmenu.show[data-enhanced] .menu .smallicon {padding: 0;}
+header {background-color: #fff;}
+header .header-logo {float: left; height: 102px; margin: 0 2% 0 0; padding: 0; width: 260px;}
+header .header-navbar { float: left; width: 70%; }
+header div.logo {background: rgba(0, 0, 0, 0) url([[pix:theme|logo]]) no-repeat scroll 50% 40% / contain;  float: none; height: 100%; margin: 0 20px; padding: 0;  width: 50%; max-width: 150px;}
+#region-main {margin-bottom: 50px;}
+#page.container-fluid {margin-top: 130px; padding-left: 300px;}
+#page.container-fluid.full-width {margin-top: 130px; padding-left: 90px;}
+footer.page-footer {display: none;}
+.block img.iconsmall {padding: 0; margin-right: 3px;}
+.block .header h2 {font:16px HelveticaNeue; text-transform: none; color: #777;}
+.toggler-bg { background-color: rgba(255, 255, 255, 0.8); border: 0 none; height: 100%; position: absolute; top: -120px;  width: 100%; z-index: 1000; display: none;}
+.header-toggler-bg { background-color: rgba(255, 255, 255, 0.8); border: 0 none; height: 100%; position: absolute; left:0; top: 0px;  width: 100%; z-index: 5000; display: none;}
+body .breadcrumb-button {margin-top: 44px;}
+header .small-logo-box {padding: 20px 0 0 0;}
+header div.small-logo {background: rgba(0, 0, 0, 0) url([[pix:theme|small-logo]]) no-repeat scroll 50% 40% / contain; float: left; height: 30px; margin: 6px 22px; padding: 0; width: 25px;}
+.small-logo-box .course-name-box {margin-left: 90px;}
+.small-logo-box .course-name-box > a {color: #003370; font: 26px/26px HelveticaNeue; display: block; margin-bottom: 5px;}
+.small-logo-box .course-name-box > a.course-name {font: 16px/24px HelveticaNeue; margin-bottom: 0;}
+.small-logo-box .course-progress-box {margin-top: 7px; margin-left: 15px;}
+.small-logo-box .course-progress-box label {color: #58595b;font: 10px HelveticaNeue; margin-bottom: 2px; text-transform: uppercase;}
+.small-logo-box .course-progress-box .course-progress {background-color: #eeefef; border-radius: 3px; height: 10px; position: relative; width: 170px;}
+.small-logo-box .course-progress-box .course-progress-percentage { background-color: #ffd200; border-radius: 3px; height: 10px;}
+
+/* header */
+.container-fluid.header-search-panel { margin: 0 20px 0 0; padding: 0;}
+.container-fluid.header-search-panel .search-input-wrapper {border-right: 1px solid #bbb; float: left; height: auto; margin: 5px 5px 5px 2px; overflow: hidden; width: 54%;}
+.container-fluid.header-search-panel .search-input-wrapper > div {float: left; margin: 3px 3px 0; position: absolute; background: transparent url([[pix:theme|themeicons/Search_Gray]]) no-repeat scroll 50% 50% / contain; height: 15px;width: 15px;}
+.container-fluid.header-search-panel .search-input-wrapper > div img {display:none;}
+.navbar .container-fluid.header-search-panel .search-input-wrapper > form {margin: 0 0 0 25px; opacity: 1;}
+.header-search-panel .search-input-wrapper > form > input {border: 0 none; border-radius: 0; box-shadow: none; color: #333;  font: 14px helvetica; margin: -2px 0; padding: 0 5px; width: 40%; height: 22px;}
+.header-search-panel .search-input-wrapper > form > input:focus {box-shadow: none;}
+
+.container-fluid.header-path-panel {padding: 0 20px 0 0;}
+.container-fluid.header-path-panel .breadcrumb-nav {margin-bottom: 0;}
+.container-fluid.header-path-panel .breadcrumb-nav .breadcrumb {padding: 7px 20px 7px 0; background-color: transparent; border-radius: 0;}
+.container-fluid.header-path-panel .breadcrumb-nav .breadcrumb li {margin-right: 5px; text-shadow: none; font: 13px Helvetica;}
+.container-fluid.header-path-panel .breadcrumb-nav .breadcrumb li a {color: #58595b;font: 14px HelveticaNeue;}
+.container-fluid.header-path-panel .breadcrumb-nav .breadcrumb li.active a {font-weight: 600;}
+
+
+.header-notifications-menu {width: 100%; background-color: #e8e8e8;}
+.header-notifications-menu ul {margin: 0; padding:0; list-style: none;}
+.header-notifications-menu ul li {float: right; display: block; border-left: 1px solid #fff; border-right: 1px solid #e8e8e8; position: relative;}
+.header-notifications-menu ul li:hover, .header-notifications-menu ul li.open {float: right; display: block; border-left: 1px solid #003370;border-right: 1px solid #003370;}
+.header-notifications-menu ul li a {font: 600 11px/28px HelveticaNeue; letter-spacing: 1.6px; text-transform: uppercase; padding: 0 20px 0 18px; color: #003370; display: block; position: relative;}
+.header-notifications-menu ul li a:hover, .header-notifications-menu ul li.open a {background-color: #fff; z-index: 1;}
+.header-notifications-menu ul li.moodle-editing-btn { position: relative; }
+.header-notifications-menu ul li.moodle-editing-btn .singlebutton div {margin: 0;}
+.header-notifications-menu ul li.moodle-editing-btn .fa {margin: 0 2px 0 8px;}
+.header-notifications-menu ul li.moodle-editing-btn a:hover .fa {color: #003370;}
+.header-notifications-menu ul li.moodle-editing-btn:hover .actions-menu {display:block;}
+
+.header-notifications-menu ul li.moodle-editing-btn input[type="submit"] {margin-bottom: 0; background-image: none; background-color: transparent; border: 0; box-shadow: none; padding: 0; line-height: 20px; margin: 0px; color: #003370; font-size: 14px;}
+.header-notifications-menu ul li.moodle-editing-btn input[type="submit"]:hover {text-decoration: underline;}
+.header-notifications-menu ul li.moodle-editing-btn input[type="submit"]:focus {border: 0; box-shadow: none;}
+.header-notifications-menu ul li .menu-icon {margin: 0 2px 0 0;}
+.header-notifications-menu ul li .menu-icon img {height: 15px; margin-top: -3px;}
+.header-notifications-menu ul li .menu-icon.icon-alert {background: transparent url([[pix:theme|themeicons/Alerts_LightGray]]) no-repeat scroll 50% 50% / contain;}
+.header-notifications-menu ul li a:hover .menu-icon.icon-alert {background: transparent url([[pix:theme|themeicons/Alerts_Red]]) no-repeat scroll 50% 50% / contain;}
+.header-notifications-menu ul li .menu-icon.icon-messages {background: transparent url([[pix:theme|themeicons/Messages_Gray]]) no-repeat scroll 50% 50% / contain; height: 20px; margin-top: -2px; width: 20px;}
+.header-notifications-menu ul li a:hover .menu-icon.icon-messages {background: transparent url([[pix:theme|themeicons/Messages_Blue]]) no-repeat scroll 50% 50% / contain;}
+.header-notifications-menu ul li .menu-icon.icon-notes {background: transparent url([[pix:theme|themeicons/Notes_Yellow]]) no-repeat scroll 50% 50% / contain;}
+.header-notifications-menu .actions-menu { background-color: #fff; padding:8px 12px;  position: absolute; right:-1px; top: 28px;display:none; min-width: 145px; border:1px solid #003370; border-top: 0;}
+.header-notifications-menu .actions-menu form {line-height: 0;}
+.header-notifications-menu ul li a.hide-edit-form-btn {margin-left: 30px !important;}
+
+body .block {border-radius: 0; box-shadow: none; background-color: #f9f9f9; border: 1px solid #e7e7e7;}
+
+section.left-sidebar { background-color: #003370; height: 100%; left: 0;  position: fixed; width: 65px; z-index:2000;}
+section.left-sidebar.open { width: 260px; transition: all 400ms cubic-bezier(0.05, 0.74, 0.27, 0.99) 0s;}
+section.left-sidebar .main-navigation li span { display: none; }
+section.left-sidebar.open .main-navigation li span { display: inline-block; }
+section.left-sidebar .main-navigation ul {padding: 0; margin: 15px 0; list-style: none;}
+section.left-sidebar .main-navigation ul li {padding: 0px; position: relative;}
+section.left-sidebar .main-navigation li a {color: #fff; display: block; font: bold 14px/40px HelveticaNeue; height: 54px; padding: 7px 0;}
+section.left-sidebar.open .main-navigation li a {padding: 6px 20px;}
+section.left-sidebar .main-navigation li.active, section.left-sidebar .main-navigation li:hover {background-color: #fff;}
+section.left-sidebar.open .main-navigation .course-section-box li {background-color: transparent;}
+section.left-sidebar .main-navigation li.active a, section.left-sidebar .main-navigation li:hover a {color:#003370;}
+section.left-sidebar .main-navigation li .menu-icon {font-size: 30px; height: 40px; line-height: 40px; margin: 0 12px; padding: 0; text-align: center; width: 40px;}
+section.left-sidebar.open .main-navigation li .menu-icon { margin: 0 15px; position: absolute; right: 5px; top: 6px;}
+section.left-sidebar .main-navigation li.dashboard .menu-icon {background: transparent url([[pix:theme|themeicons/Dashboard_White]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.dashboard:hover .menu-icon, section.left-sidebar .main-navigation li.active.dashboard .menu-icon {background: transparent url([[pix:theme|themeicons/Dashboard_Blue]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.activecourse .menu-icon {background: transparent url([[pix:theme|sidebar/active_course]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.activecourse:hover .menu-icon, section.left-sidebar .main-navigation li.activecourse.active .menu-icon {background: transparent url([[pix:theme|sidebar/active_course_h]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.resources .menu-icon {background: transparent url([[pix:theme|sidebar/resources]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.resources:hover .menu-icon, section.left-sidebar .main-navigation li.resources.active .menu-icon {background: transparent url([[pix:theme|sidebar/resources_h]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.schedule .menu-icon {background: transparent url([[pix:theme|sidebar/schedule]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.schedule:hover .menu-icon, section.left-sidebar .main-navigation li.schedule.active .menu-icon {background: transparent url([[pix:theme|sidebar/schedule_h]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.gradebook .menu-icon {background: transparent url([[pix:theme|sidebar/gradebook]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.gradebook:hover .menu-icon, section.left-sidebar .main-navigation li.gradebook.active .menu-icon {background: transparent url([[pix:theme|sidebar/gradebook_h]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.faq .menu-icon {background: transparent url([[pix:theme|sidebar/faq]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.faq:hover .menu-icon, section.left-sidebar .main-navigation li.faq.active .menu-icon {background: transparent url([[pix:theme|sidebar/faq_h]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.glossary .menu-icon {background: transparent url([[pix:theme|sidebar/glossary]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.glossary:hover .menu-icon, section.left-sidebar .main-navigation li.glossary.active .menu-icon {background: transparent url([[pix:theme|sidebar/glossary_h]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.bookmarks .menu-icon {background: transparent url([[pix:theme|sidebar/bookmarks]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.bookmarks:hover .menu-icon, section.left-sidebar .main-navigation li.bookmarks.active .menu-icon {background: transparent url([[pix:theme|sidebar/bookmarks_h]]) no-repeat scroll 50% 50% / contain;}
+
+section.left-sidebar.open .main-navigation .course-content-box {background-color: #bfd5ef; display: none;}
+section.left-sidebar.open .main-navigation ul li.active .course-content-box { display: block;}
+section.left-sidebar.open .main-navigation .course-content-box ul.course-root-sections {margin: 0; padding: 15px 0 !important;}
+section.left-sidebar.open .main-navigation .course-content-box .course-root-sections .course-section-box li .section-header {display: block; font: 14px/19px Helvetica; height: auto; padding: 0 15px 0 40px;}
+.left-sidebar .main-navigation ul li.active .course-content-box, .left-sidebar .main-navigation ul li .course-content-box {display: none;}
+section.left-sidebar.open .main-navigation .course-content-box li:hover, section.left-sidebar.open .main-navigation .course-content-box li.active {background-color: #bfd5ef;}
+section.left-sidebar.open .main-navigation .course-content-box li.active a {font-weight: bold;}
+section.left-sidebar.open .main-navigation .course-content-box li a {font-weight: normal; font-size: 13px; height: auto; line-height: 21px; padding: 7px 20px 7px 40px; }
+
+.left-sidebar .settings-navigation {bottom: 120px; position: absolute; width: 65px;}
+.left-sidebar.open .settings-navigation {width: 260px;}
+section.left-sidebar .main-navigation li.preferences .menu-icon {background: transparent url([[pix:theme|themeicons/Settings_White]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.preferences:hover .menu-icon, section.left-sidebar .main-navigation li.preferences.active .menu-icon {background: transparent url([[pix:theme|themeicons/Settings_Blue]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.profile .menu-icon {background: transparent url([[pix:theme|themeicons/Username_White]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.profile:hover .menu-icon, section.left-sidebar .main-navigation li.profile.active .menu-icon {background: transparent url([[pix:theme|themeicons/Username_Blue]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.logout .menu-icon {background: transparent url([[pix:theme|themeicons/Logout_White]]) no-repeat scroll 50% 50% / contain;}
+section.left-sidebar .main-navigation li.logout:hover .menu-icon, section.left-sidebar .main-navigation li.logout.active .menu-icon {background: transparent url([[pix:theme|themeicons/Logout_Blue]]) no-repeat scroll 50% 50% / contain;}
+
+section.left-sidebar .main-navigation ul li.submenu:hover .menu-popup {display: block;}
+section.left-sidebar .main-navigation li .menu-popup {display: none; background-color: rgba(255, 255, 255, 1); border: 1px solid #003370; padding: 13px 15px; position: absolute; right: -299px; width: 299px; border-left:0; margin-top: -85px; z-index: 1;}
+section.left-sidebar .main-navigation li .menu-popup li a {color: #003370;display: block; font: 400 13px/16px Tahoma; height: auto; padding: 6px 0;}
+section.left-sidebar .main-navigation li .menu-popup li:hover {background-color: transparent;}
+section.left-sidebar .main-navigation li .menu-popup li a:hover {text-decoration: underline;}
+section.left-sidebar .main-navigation li .menu-popup li a.active {font-weight: bold;}
+
+section.left-sidebar .main-navigation li.toggler i.fa-angle-left {display: none;}
+section.left-sidebar.open .main-navigation li.toggler i.fa-angle-left {display: block; line-height: 38px;}
+section.left-sidebar.open .main-navigation li.toggler i.fa-angle-right {display: none;}
+.side-pre-box.open {background-color: #00428e; display: block; height: 100%; left: 65px; overflow: auto; position: fixed; top: 130px; width: 300px; transition: all 400ms cubic-bezier(0.05, 0.74, 0.27, 0.99) 0s;}
+section.left-sidebar.open .side-pre-box.open {left: 260px; transition: all 400ms cubic-bezier(0.05, 0.74, 0.27, 0.99) 0s;}
+body .left-sidebar .block {background-color: transparent; border: 0; color: #fff; margin: 0;}
+body .left-sidebar .block .header h2 { border-bottom: 1px dashed #fff; color: #fff; display: block; font: 16px HelveticaNeue;  margin: 0 10px; padding: 3px 15px 8px 0; text-shadow: none; text-transform: none; word-wrap: break-word;}
+body .left-sidebar .block .content hr {border: 0 none; margin: 7px 0 0;}
+.left-sidebar .block li {color: #fff;font: 13px Open Sans;}
+.left-sidebar .block li a {color: #fff;font: 13px Open Sans;}
+.left-sidebar .block li a:hover {text-decoration: underline;}
+.left-sidebar .block_settings #adminsearchquery {border-radius: 2px; margin-top: 15px; max-width: 100%; width: 100%;}
+.left-sidebar .block_settings .adminsearchform {text-align: center;}
+.left-sidebar .block_adminblock select {max-width: 100%; width: 100%;}
+.left-sidebar div.singleselect {padding: 0 10px; width: 100%;}
+.side-pre-box aside {padding: 15px 0 150px;}
+.left-sidebar .sidebar-title {border-bottom: 1px solid #fff; color: #fff; font: 18px Open Sans; letter-spacing: 1.2px;  padding: 15px 10px 13px; position: relative; }
+.sidebar-title .ion-ios-close-outline {cursor: pointer; position: absolute; right: 15px; opacity: 0.7;}
+.sidebar-title .ion-ios-close-outline:hover {cursor: pointer; position: absolute; right: 15px; opacity: 1;}
+
+/* login page */
+.login-page {padding:0; overflow: hidden; position: absolute; width: 100%; height: 100%; background: #fff url([[pix:theme|new-login-background]]) no-repeat scroll 0 0 / cover ; }
+.login-page header.navbar {position: relative;}
+.login-page header .header-logo {float: none; height: 100%; margin: 0; padding: 0; width: 100%;}
+.login-page #page-navbar, .login-page #course-header {display:none}
+.login-page .container-fluid#page {background-color: #003370; color: #fff; height: 100%; position: fixed; right: 0; padding: 0; width: 28%;margin-top: 0; }
+.login-page .container-fluid header {background-color: #fff; height: 30%;}
+.login-page .container-fluid header div.logo { background-size: contain; background-position: 50% 40%; float: none; height: 100%; margin: 0 auto; padding: 0;  width: 70%; max-width: 180px;}
+.login-page footer#page-footer {position: fixed; display: block; width: 72%; padding: 0; margin: 0; bottom: 0; border: 0;}
+.login-page footer .helplink {display:none}
+.login-page footer .footer-info {display:none;}
+.login-page footer .foot-notes {padding: 40px 50px; color: #58595b; font-size: 15px; overflow: hidden;}
+.login-page footer .foot-notes, .login-page footer .foot-notes .text-center {text-align: left;}
+.login-page footer .foot-notes .footnote.text-center { position: relative; width: 50%; z-index: 2;}
+.login-page footer .foot-notes h1 {font:600 32px HelveticaNeueUltraLight; letter-spacing: 3px; color: #003370;}
+.login-page footer .foot-notes .rotate-white { background: #fff none repeat scroll 0 0; height: 500%; margin: -10px -50px 0;  position: absolute; transform: skew(0deg, 7deg); width: 100%; z-index: 1;}
+.login-page footer .foot-notes .rotate-red { background-color: #8c0c20; height: 500%; margin: -10px -50px; position: absolute; transform: skew(0deg, -13deg); width: 100%; z-index: -1;}
+.login-page .page-content section { float: none; margin-left: 0;} 
+.login-page .page-content .loginbox { padding: 10px;} 
+.login-page .page-content .loginpanel h2 { display: none;} 
+.login-page .loginbox .loginform .form-label {float: none; text-align: left; white-space: nowrap; width: 100%;}
+.login-page .loginbox .loginform .form-label label {display: block; font: 15px HelveticaNeue; color: #fff;}
+.login-page .loginbox .loginform .form-input {float: none; width: 100%;}
+.login-page .loginbox .loginform .form-input input {border: 0 none; border-radius: 0; box-shadow: none; box-sizing: border-box; height: 32px; line-height: 32px; margin-bottom: 13px; padding: 0 10px; width: 95%;}
+.login-page .loginbox .rememberpass {margin-bottom: 50px; text-align: left;}
+.login-page .loginbox .rememberpass label {color:#fff; font-size: 14px;}
+.login-page .loginbox #loginbtn { background-color: #ffd200; background-image: none; border: 1px solid #ffd200; border-radius: 0; color: #003370; font: 600 11px/14px HelveticaNeue; letter-spacing: 1px; margin: 5px 0 15px;  padding: 6px 30px;  text-transform: uppercase;}
+.login-page .loginbox #loginbtn:hover, .login-page .loginbox #loginbtn:focus { background-color: #003370; color: #ffd200; text-shadow: none;}
+.login-page .loginbox .forgetpass {text-align: left;}
+.login-page .loginbox .forgetpass a {color: #fff; text-decoration: underline; font: 14px HelveticaNeue;}
+.login-page .loginbox .forgetpass a:hover, .login-page .loginbox .forgetpass a:focus {color: #fff; text-decoration: none;}
+.login-page .loginbox .loginpanel .desc {font-family: HelveticaNeue;font-size: 14px; margin-top: -104px; padding: 0; position: absolute; text-align: left;}
+.login-page .loginbox .loginpanel .desc .helptooltip {margin-left: 5px;}
+.login-page input[type="radio"], .login-page input[type="checkbox"] {margin-top: -1px;}
+.login-page .loginerrors {background-color: rgba(255, 255, 255, 0.1); border-radius: 3px; padding: 5px;}
+.login-page .loginerrors .error .icon-pre {padding-right: 7px;}
+.login-page .loginpanel .error {color: #aaa;}
+.login-page .navbar-fixed-top, .login-page .navbar-fixed-bottom, .login-page .navbar-static-top {margin: 0;}
+.login-page input[type="checkbox"] + label{color: #626262;font-size: 13px;font-weight: 300;padding-left: 25px;position: relative; display: inline-block!important; vertical-align: middle;margin-bottom: 0;}
+.login-page input[type="checkbox"] + label + label{display: inline-block;}
+.login-page input[type="checkbox"] + label:before {left: auto;left:2px;border-radius: 3px;transition: border 0.2s linear 0s, color 0.2s linear 0s;border: 1px solid #aaa;content: "";display: inline-block;height: 17px; right:-25px;position: absolute;width: 17px;background-color: #fff;}
+.login-page input[type="checkbox"] + label:after {content: "\F00C";color: transparent;display: inline-block;font-family: fontawesome;font-size: 11px;height: 17px;position: absolute;left: 6px;top: 3px;width: 17px;}
+.login-page input[type="checkbox"][disabled="disabled"] ~ label,
+.login-page input[type="checkbox"][disabled="disabled"] ~ label:after { cursor: not-allowed;}
+.login-page input[type="checkbox"]:checked + label:after {color: #fff;}
+.login-page input[type="checkbox"]:checked + label:before {background-color: #fff;border-width: 8.5px;}
+.login-page input[type="checkbox"]{ display: none;}
+
+/* moodle left sidebar */
+.side-pre-box {display: none;}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {height: auto;}
+.file-picker .fp-list .fp-repo-icon {padding: 0;}
+
+.container-fluid .side-post {position: relative;transition: all 400ms cubic-bezier(0.05, 0.74, 0.27, 0.99) 0s; display:none;}
+.container-fluid .side-post.open {display:block;}
+.side-post aside {background-color: #bfd5ef; height: 100%; overflow: auto; padding-bottom: 120px; position: fixed; width: 22%;}
+body .side-post aside .block { background-color: transparent; border: 0 none; border-radius: 0; box-shadow: none; color: #003370; padding: 0;}
+.side-post aside .block .header h2 { color: #003370;}
+.side-post aside a { color: #003370;}
+
+.path-mod-glossary .glossarypost .entrylowersection table tbody tr + tr {
+    position: absolute;
+    right: 0;
+    top: 0;
+    vertical-align: baseline;
+    width: 50px;
+}
+
+.path-mod-glossary .glossarycategoryheader {
+    margin-top: 15px;
+}
+
+#notice .singlebutton + .singlebutton input, .submit.buttons input[name="cancel"] {
+    background-image: none;
+    border-radius: 0;
+    font: 600 10px/16px HelveticaNeue;
+    letter-spacing: 1px;
+    padding: 4px 5px;
+    text-shadow: none;
+    text-transform: uppercase;
+    border-color: #e6e6e6;
+    box-shadow: none;
+}
+
+.btn {background-color: rgba(250, 210, 0, 1); background-image: none; border: 1px solid #ffd200;  border-radius: 0; box-shadow: none; color: #003370; font: bold 10px/16px HelveticaNeue; letter-spacing: 1.5px; padding: 7px 12px 6px; text-shadow: none; text-transform: uppercase;}
+.btn:hover, .btn:focus {background-color: rgba(250, 210, 0, 0.8); background-image: none; border: 1px solid #ffd200;color: #003370;}
+
+.btn.btn-disabled {background-color: #eee; background-image: none; color: #999; border:1px solid #eee; border-radius: 0; box-shadow: none; font: bold 10px/16px HelveticaNeue; letter-spacing: 1.5px; padding: 7px 12px 6px; text-shadow: none; text-transform: uppercase;}
+
+.btn.btn-warning {background-color: rgba(250, 166, 52, 1); background-image: none; border: 1px solid #faa634; color: #fff;  border-radius: 0; box-shadow: none; font: bold 10px/16px HelveticaNeue; letter-spacing: 1.5px; padding: 7px 12px 6px; text-shadow: none; text-transform: uppercase;}
+.btn.btn-warning:hover, .btn.btn-warning:focus {background-color: rgba(250, 166, 52, 0.8); background-image: none; border: 1px solid #faa634; color: #fff;}
+
+.btn.btn-success {background-color: rgba(193, 216, 47, 1); background-image: none; border: 1px solid #c1d82f; color: #fff;  border-radius: 0; box-shadow: none; font: bold 10px/16px HelveticaNeue; letter-spacing: 1.5px; padding: 7px 12px 6px; text-shadow: none; text-transform: uppercase;}
+.btn.btn-success:hover, .btn.btn-success:focus {background-color: rgba(193, 216, 47, 0.8); background-image: none; border: 1px solid #c1d82f; color: #fff;}
+
+.btn.btn-danger {background-color: rgba(152, 13, 34, 1); background-image: none; border: 1px solid #980d22; color: #fff;  border-radius: 0; box-shadow: none; font: bold 10px/16px HelveticaNeue; letter-spacing: 1.5px; padding: 7px 12px 6px; text-shadow: none; text-transform: uppercase;}
+.btn.btn-danger:hover, .btn.btn-danger:focus {background-color: rgba(152, 13, 34, 0.8); background-image: none; border: 1px solid #980d22; color: #fff;}
+
+.btn.btn-info {background-color: rgba(114, 204, 210, 1); background-image: none; border: 1px solid #72ccd2; color: #fff;  border-radius: 0; box-shadow: none; font: bold 10px/16px HelveticaNeue; letter-spacing: 1.5px; padding: 7px 12px 6px; text-shadow: none; text-transform: uppercase;}
+.btn.btn-info:hover, .btn.btn-info:focus {background-color: rgba(114, 204, 210, 0.8); background-image: none; border: 1px solid #72ccd2; color: #fff;}
+
+.btn.btn-empty {background-color: rgba(255, 255, 255, 1); background-image: none; border: 1px solid #81addf; color: #81addf;  border-radius: 0; box-shadow: none; font: bold 10px/16px HelveticaNeue; letter-spacing: 1.5px; padding: 7px 12px 6px; text-shadow: none; text-transform: uppercase;}
+.btn.btn-empty:hover, .btn.btn-empty:focus {background-color: #81addf; background-image: none; border: 1px solid #81addf; color: #fff;}
+
+.generalbox.boxwidthwide {width: 100%;}
+#page-mod-quiz-review .que .info .editquestion, #page-mod-quiz-attempt .que .info .editquestion {display: none;}
+.path-mod-scorm .singlebutton div, .path-mod-scorm .singlebutton div input[type="submit"]{margin-left: 0;}
+
+/* bookmarks */
+.bookmarks-box {background-color: #fff; border: 1px solid #003370; max-height: 100%; overflow: auto; padding: 10px 0 0;  position: absolute; right: -1px; min-width: 300px; display: none; margin-top: -1px;}
+.bookmarks-menu.open .bookmarks-box {display: block;}
+.bookmarks-form-title { color: #003370; font: 600 12px HelveticaNeue; letter-spacing: 1.8px; padding: 0 10px; text-transform: uppercase;}
+.bookmarks-form form { border-bottom: 1px solid #ccc; padding: 12px 10px 8px; }
+.bookmarks-form form label { color: #003370; display: inline-block; font: 11px HelveticaNeue; letter-spacing: 0.8px; text-transform: uppercase;}
+.bookmarks-form form input { border: 1px solid #ccc; border-radius: 0; box-shadow: none; color: #003370; font: 14px HelveticaNeue; margin: 0 0 0 10px; }
+.bookmarks-form form input.req, .bookmarks-form form input.req:focus { border: 1px solid #cc0000; }
+.header-notifications-menu ul li .bookmarks-form form a { display: inline; font: 11px HelveticaNeue; letter-spacing: 0.8px; margin-left: 55px; padding: 0; float: left; margin-top:7px;}
+.header-notifications-menu ul li .bookmarks-form form a:hover { color: #333; }
+.saved-bookmarks-title {color: #003370; font: 600 12px HelveticaNeue; letter-spacing: 1.8px; padding: 10px; text-transform: uppercase;}
+.header-notifications-menu ul li.bookmark-item {background-color: #eeefef; border: 0 none; display: block; float: none; line-height: 16px; padding: 10px;}
+.header-notifications-menu ul li.bookmark-item.active a.bookmark-link, .header-notifications-menu ul li.bookmark-item.current a.bookmark-link, section.left-sidebar .main-navigation li .menu-popup li.active a.bookmark-link, section.left-sidebar .main-navigation li .menu-popup li.current a.bookmark-link {font-weight: bold;}
+section.left-sidebar .main-navigation li .menu-popup li a.bookmark-link:hover {text-decoration:none;}
+.header-notifications-menu ul li.bookmark-item:nth-child(2) {background-color: #f7f8f8;}
+.header-notifications-menu ul li a.bookmark-link, section.left-sidebar .main-navigation li .menu-popup li a.bookmark-link {font: 14px/17px HelveticaNeue; letter-spacing: 0.8px; padding: 0; display: initial; text-transform: none;}
+.header-notifications-menu ul li a.bookmark-link:hover, .header-notifications-menu ul li.open a.bookmark-link {background-color: transparent;}
+.bookmark-actions {margin-top: 4px; position: relative;}
+section.left-sidebar .main-navigation li .menu-popup li .bookmark-actions {margin-top: 2px; position: relative;}
+.header-notifications-menu ul li .bookmark-actions a, section.left-sidebar .main-navigation li .menu-popup li .bookmark-actions a {display: inline-block; font: 10px/11px HelveticaNeue; letter-spacing: 0.8px; padding: 0 20px 0 0; text-transform: uppercase;}
+section.left-sidebar .main-navigation li .menu-popup li .bookmark-actions a:hover {text-decoration: none;}
+.header-notifications-menu ul li .bookmark-actions a:hover, .header-notifications-menu ul li.open .bookmark-actions a {background-color: transparent; text-decoration: none;}
+.bookmark-actions i {color: #003370; display: inline-block; font-size: 5px; left: 68px; position: absolute; top: 7px;}
+section.left-sidebar .main-navigation li .menu-popup .bookmark-actions i {color: #003370; display: inline-block; font-size: 5px; left: 68px; position: absolute; top: 8px;}
+section.left-sidebar .main-navigation ul li .menu-popup li.bookmark-item {padding: 7px 0;}

@@ -1,0 +1,78 @@
+body .block_course_catalog.block {padding: 0; background-color: transparent; border: 0;}
+.block.block_course_catalog .content {padding:0; position: relative;}
+.block.block_course_catalog .block-control-actions {display:none !important;}
+.editing .block.block_course_catalog .block-control-actions {display:block !important;}
+.block_course_catalog .form-filter {display: block; float:right;}
+.block_course_catalog .form-filter:hover:after {height: 0;}
+.block_course_catalog .form-filter fieldset {display: none;}
+.block_course_catalog .form-filter fieldset.active {display: block; float:right; }
+.block_course_catalog .form-filter fieldset.courseactionsbox {display: block; float:right; margin-left: 18px;}
+.block_course_catalog .form-filter fieldset.courseactionsbox span {cursor: pointer; margin: 0 3px;}
+.block_course_catalog .form-filter fieldset.courseactionsbox span i {font-size: 21px; line-height: 26px; color: #b1aead;}
+.block_course_catalog .form-filter fieldset.courseactionsbox span i:hover {color: #777;}
+.courseactionsbox span.action-view i {display:none;}
+.courseactionsbox span.action-view i.active {display:inline-block;}
+.coursfilterbox span {display: inline-block; font: 10px/27px Open Sans; padding: 0 13px; text-transform: uppercase; width: auto;}
+.block.block_course_catalog .coursfilterbox input {background-color: #f2f2f2; box-shadow: none; font: 12px/27px Open Sans; height: 27px; line-height: 27px; width: 150px; margin-bottom: 0;}
+.block.block_course_catalog .coursfilterbox input:focus {border-color:#ccc; box-shadow: none;}
+.block.block_course_catalog .coursfilterbox select {font: 12px/27px Open Sans; height: 27px; margin: 0; padding: 0 5px 0 5px; width: auto; background-color: #f2f2f2;}
+.block.block_course_catalog .coursfilterbox select.menucourses_cat {width: 115px;}
+.block.block_course_catalog .coursfilterbox select.menucourses_status {width: 100px;}
+.coursesortbox span.active, .coursesortbox span:hover {color:#2082c7;}
+.coursesortbox span {display: inline-block; font: 12px/27px Open Sans; margin: 0 7px; cursor:pointer;}
+.coursesortbox span i {margin-right: 2px; display:none;}
+.coursesortbox span i.active {display: inline;}
+
+.block_course_catalog .tab-content {margin-top: 15px;}
+.block_course_catalog .course-catalog-title { color: #003370; font: bold 22px HelveticaNeueUltraLight; letter-spacing: 1.2px;}
+.block_course_catalog .pickup-block {background-color: #ffd200; cursor: pointer; display: inline-block; font: 600 11px/16px HelveticaNeue; letter-spacing: 1.2px; margin-top: 10px; padding: 7px 30px; text-align: center; text-transform: uppercase;  width: 180px; color: #003370; border:1px solid #ffd200;}
+.block_course_catalog .pickup-block:hover {background-color: #fff;}
+.block_course_catalog .nav-tabs-header {position: absolute;right: 0; top: 0;}
+.block_course_catalog .frontpage-courses-list {overflow: hidden;}
+.block_course_catalog .courses {margin-right: -2%;}
+.block_course_catalog .courses .coursebox {background-color: #72ccd2; border: 0 none; border-radius: 0; float: left;  margin: 0 2.3% 2% 0; padding: 0 0 35px; position: relative; width: 31%; cursor:pointer;}
+.block_course_catalog .courses .coursebox:hover {opacity:0.9;background-color: #72ccd2;}
+.block_course_catalog .courses .coursebox.inprogress, .block_course_catalog .courses .coursebox.pending {background-color: #faa634;}
+.block_course_catalog .courses .coursebox.inprogress:hover, .block_course_catalog .courses .coursebox.pending:hover {background-color: #faa634;}
+.block_course_catalog .courses .coursebox.completed, .block_course_catalog .courses .coursebox.completed:hover {background-color: #c1d82f; }
+.block_course_catalog .coursebox .coursename {color: #fff; font: bold 12px HelveticaNeueUltraLight; letter-spacing: 1.4px; padding: 25px 25px 0px;}
+.block_course_catalog .coursebox .coursename a {color: #fff; font: bold 19px HelveticaNeueUltraLight; letter-spacing: 1.4px; display: block; height: 37px; overflow: hidden;}
+.block_course_catalog .coursebox .coursename a:hover {text-decoration: underline;}
+.block_course_catalog .coursebox .descrition { color: #003370; font: 14px/21px HelveticaNeue;  height: 190px; margin-bottom: 15px; overflow: hidden; padding: 0 25px;}
+.block_course_catalog .coursebox .course-progress {color: #fff; font: bold 14px Arial; letter-spacing: 1.5px; padding: 0 25px; position: absolute; text-transform: uppercase; }
+.block_course_catalog .coursebox .course-progress label {color: #fff; font: bold 14px Arial; letter-spacing: 1.5px; text-transform: uppercase; display: inline-block; margin-right: 3px;}
+
+.block_course_catalog .load-more-box {clear: both; padding-top: 30px; position: relative; text-align: center;}
+.block_course_catalog .fa-loader {clear: both; font-size: 22px; text-align: center;} 
+
+.block_course_catalog .list-view .courses {margin-right: 0;}
+.block_course_catalog .list-view .courses .coursebox {float: none; width: 100%; margin: 0 0 2%;}
+.block_course_catalog .list-view .courses .coursebox .descrition {max-height: 190px; height: auto;}
+
+
+@media screen and (max-width: 1500px){
+    .block_course_catalog .form-filter{width: 100%;}
+}
+
+@media screen and (max-width: 1000px){
+    .block_course_catalog .form-filter {width: 100% !important; }
+    .block_course_catalog .nav-tabs-header .nav-tabs-simple li {width: auto;}
+    .block_course_catalog .coursebox .descrition {height: 150px;}
+}
+
+@media screen and (max-width: 900px){
+    .block_course_catalog .courses .coursebox {width: 48%;margin: 0 2% 2% 0;}
+    .block_course_catalog .nav-tabs-header { position: relative; right: 0; top: 7px; padding: 5px 0;}
+}
+
+@media screen and (max-width: 650px){
+    .block_course_catalog .nav-tabs-header .nav-tabs-simple li {width: 50%;}
+    .block_course_catalog .courses .coursebox {width: 100%;margin: 0 0 2% 0; float: none;}
+    .block.block_course_catalog .coursfilterbox input, .block.block_course_catalog .coursfilterbox select {margin-bottom: 5px;}
+    .block_course_catalog .form-filter fieldset.active {float: none;}
+    .coursfilterbox span {display: block; padding: 0;}
+}
+
+
+
+

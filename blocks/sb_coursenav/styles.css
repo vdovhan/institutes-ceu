@@ -1,0 +1,30 @@
+.block_sb_coursenav.block {margin-bottom: 130px;}
+.block.block_sb_coursenav {background-color: transparent;padding: 25px 0;}
+.block.block_sb_coursenav .content {padding: 0;}
+.block.block_sb_coursenav .header {display: none;}
+.editing .block.block_sb_coursenav .header {display: block;}
+.course-navigation-block ul {padding: 0; list-style: none; margin:0;}
+.course-navigation-block ul li ul {padding: 5px 0 0 25px;}
+.course-navigation-block .course-section-box {padding: 0; margin-bottom: 10px; position: relative;font: 14px/21px HelveticaNeue;}
+.course-navigation-block .course-section-box a {display: block; padding: 7px 35px 7px 40px; position: relative; background-color: #a7c6e9;}
+.course-navigation-block .course-section-box a.current {font-weight: bold;}
+.course-navigation-block .course-section-box a.without-link {cursor: default;}
+.course-navigation-block .course-section-box .toggler {display: block; width:15px; height: 15px; position: absolute; right:10px; top:5px; cursor: pointer; z-index: 1; font-size: 19px;}
+.course-navigation-block .course-section-box.open .toggler {right:15px;}
+.course-navigation-block .course-section-box .toggler:before {display: block; width:15px; height: 15px; position: absolute; left:0; top:0; content:"\f105"; font-family: 'FontAwesome';}
+.course-navigation-block .course-section-box.open .toggler:before {content:"\f107"; font-family: 'FontAwesome'; top:0px;}
+.course-navigation-block .course-section-box i.status { font-size: 12px; left: 25px; position: absolute; top: 7px;}
+.course-navigation-block .section-counter {margin-right: 7px;}
+.course-navigation-block .course-section-box ul {display: none;}
+.course-navigation-block .course-section-box.open ul {display: block;}
+.course-navigation-block .course-section-box .course-level1-sections { list-style: none; padding-bottom: 5px; padding-left: 33px;}
+.course-navigation-block .course-section-box .course-level1-sections li { margin-bottom: 5px;}
+.course-navigation-block .course-section-box .course-level1-sections a {background-color: transparent; font-style: italic; padding: 0 0 0 7px;}
+.course-navigation-block .course-section-box .course-level2-sections { list-style: none; padding: 0;}
+.course-navigation-block .course-section-box .course-level2-sections li {margin-bottom: 1px;}
+.course-navigation-block .course-section-box .course-level2-sections a {font-style: normal; padding: 0 0 0 33px;}
+.course-navigation-block .course-section-box .course-level2-sections i.status { left: 18px; top: 1px;}
+
+.course-navigation-block .course-level1-sections .course-section-box .toggler {display: block; width:15px; height: 15px; position: absolute; left:0; top:0px; cursor: pointer;}
+.course-navigation-block .course-level1-sections .course-section-box .toggler:before {display: block; width:15px; height: 15px; position: absolute; left:0; top:-2px; content:"+";}
+

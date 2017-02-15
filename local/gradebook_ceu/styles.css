@@ -1,0 +1,85 @@
+.path-local-gradebook_ceu h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+table.course-sections {
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+table.course-sections th {
+    color: #003370;
+    font: 600 12px HelveticaNeue;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 15%;
+    padding: 10px 25px 20px;
+}
+
+table.course-sections th.name {
+    width: 45%;
+    text-align: left;
+}
+
+table.course-sections tr td {
+    padding: 17px 0;
+    background-color: #f4f4f4;
+}
+
+table.course-sections tr:nth-child(even) td {
+    background-color: #fbfbfb;
+}
+
+table.course-sections td.section-level2 {
+    color: #595657;
+    font: italic 15px/17px HelveticaNeue;
+    padding: 15px 0 5px;
+}
+table.course-sections td.section-level3 {
+    color: #6c6b6b;
+    font: 13px/17px HelveticaNeue;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+table.course-sections tr.quiz-row td {
+    color: #595657;
+    font: 14px/17px HelveticaNeue;
+    text-align: center;
+}
+table.course-sections tr.quiz-row.last-row td {
+    padding-bottom: 10px
+}
+table.course-sections tr.quiz-row td.name{
+    padding-left: 25px;
+    text-align: left;
+}
+table.course-sections tr.quiz-row td.name a{
+    color: #595657;
+}
+table.course-sections tr.quiz-row td.name a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 450px) {
+    table.course-sections td.section-level2, 
+    table.course-sections td.section-level3, 
+    table.course-sections tr.quiz-row td{
+        font-size:13px;
+        font-weight: 15px;
+    }
+    table.course-sections td.section-level3,
+    table.course-sections tr.quiz-row td.name{
+        padding-left: 15px;
+    }
+    table.course-sections td {
+        padding: 5px 0;
+    }
+    table.course-sections th {
+        padding: 10px 0 0;
+        font-size: 11px;
+    }
+}
+
